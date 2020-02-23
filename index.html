@@ -1,23 +1,28 @@
 <html>
   <head>
     <script type="text/javascript" src="kwadrat.js"></script>
+    <script type="text/javascript" src="kolo.js"></script>
   </head>
 
   <body>
 
     <h1>Strona do obliczania obwodu figur</h1>
 
-    <p>Oblicz obwód kwadratu</p>
+    <p>Kwadrat</p>
     <label for="dlugosc_boku_kwadratu">Podaj długość boku kwadratu: </label>
     <input id="dlugosc_boku_kwadratu" type="text">
     <button type="button" onclick="obwod_kwadratu(dlugosc_boku_kwadratu.value)">Oblicz obwód kwadratu</button>
     <button type="button" onclick="pole_kwadratu(dlugosc_boku_kwadratu.value)">Oblicz pole kwadratu</button>
 
-    <p>Oblicz obwód koła</p>
+    <br>
+
+    <p>Koło</p>
     <label for="dlugosc_promienia_kola">Podaj długość promienia koła: </label>
     <input id="dlugosc_promienia_kola" type="text">
-    <button type="button">Oblicz</button>
-    Wynik: <div id="kolo_wynik"></div>
+    <button type="button" onclick="obwod_kola(dlugosc_promienia_kola.value)">Oblicz obwód kola</button>
+    <button type="button" onclick="pole_kola(dlugosc_promienia_kola.value)">Oblicz pole kola</button>
+
+    
     
     <p>Oblicz obwód prostokąta</p>
     <label for="dlugosc_boku_a_prostokata">Podaj długość pierwszego boku prostokata: </label>
