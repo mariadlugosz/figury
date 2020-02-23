@@ -1,5 +1,6 @@
 function obwod_prostokata (bok_a, bok_b){
-    var wartosc_boku = parseFloat(bok_a, bok_b);
+    var wartosc_boku_a = parseFloat(bok_a);
+    var wartosc_boku_b = parseFloat(bok_b);
     if (isNaN(wartosc_boku_a || wartosc_boku_b)) {
         document.write(bok_a + bok_b + " nie są liczbami.");
     } else if(wartosc_boku_a<=0 || wartosc_boku_b<=0){
@@ -11,7 +12,8 @@ function obwod_prostokata (bok_a, bok_b){
 }
 
 function pole_prostokata (bok_a, bok_b) {
-    var wartosc_boku = parseFloat(bok_a, bok_b);
+    var wartosc_boku_a = parseFloat(bok_a);
+    var wartosc_boku_b = parseFloat(bok_b);
     if (isNaN(wartosc_boku_a || wartosc_boku_b)) {
         document.write(bok_a + bok_b + " nie są liczbami.");
     } else if(wartosc_boku_a<=0||wartosc_boku_b<=0){

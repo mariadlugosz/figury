@@ -12,7 +12,8 @@ function obwod_rombu (bok){
 
 
 function pole_rombu (przekatna_e, przekatna_f) {
-    var wartosc_boku = parseFloat(przekatna_e, przekatna_f);
+    var wartosc_przekatnej_e = parseFloat(przekatna_e);
+    var wartosc_przekatnej_f = parseFloat(przekatna_f);
     if (isNaN(wartosc_przekatnej_e || wartosc_przekatnej_f)) {
         document.write(przekatna_e + przekatna_f + " nie są liczbami.");
     } else if(wartosc_przekatnej_e<=0||wartosc_przekatnej_f<=0){
