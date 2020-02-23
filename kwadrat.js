@@ -7,11 +7,11 @@ function obwod_kwadratu(bok) {
     }
 }
 
-var a=10;
-if(a<=0) {
-  document.write("a musi by� dodatnie");
-}
-else {
-  var pole=a*a;
-  document.write("Pole kwadratu o boku "+a+" wynosi "+pole);
+function pole_kwadratu(bok) {
+    if(bok <= 0) {
+        document.write(bok + " musi być dodatni");
+    } else {
+        var pole = bok * bok;
+        document.write("Pole kwadratu o boku " + bok + " wynosi " + pole);
+    }
 }
