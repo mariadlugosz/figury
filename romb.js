@@ -1,18 +1,24 @@
 function obwod_rombu (bok){
-    if(bok<=0){
-      document.write(bok+ "musi być dodatni");
+    var wartosc_boku = parseFloat(bok);
+    if (isNaN(wartosc_boku)) {
+        document.write(bok + " nie jest liczbą.");
+    } else if( wartosc_boku<=0){
+      document.write(wartosc_boku+ "musi być dodatni");
     } else{
-      var obwod=4*bok;
-        document.write("Obwód rombu o boku " + bok + " wynosi " + obwod);
+      var obwod=4*wartosc_boku;
+        document.write("Obwód rombu o boku " + wartosc_boku + " wynosi " + obwod);
     }
 }
 
 
 function pole_rombu (przekatna_e, przekatna_f) {
-     if(przekatna_e<=0||przekatna_f<=0){
-      document.write(przekatna_e + przekatna_f + "muszą byc dodatnie");
+    var wartosc_boku = parseFloat(przekatna_e, przekatna_f);
+    if (isNaN(wartosc_przekatnej_e || wartosc_przekatnej_f)) {
+        document.write(przekatna_e + przekatna_f + " nie są liczbami.");
+    } else if(wartosc_przekatnej_e<=0||wartosc_przekatnej_f<=0){
+      document.write(wartosc_przekatnej_e + wartosc_przekatnej_f + "muszą byc dodatnie");
     } else{
-       var pole=1/2*przekatna_e*przekatna_f;
-       document.write("Pole rombu o przekątnych "+przekatna_e+" i "+przekatna_f+" wynosi " + pole);
+       var pole=1/2*wartosc_przekatnej_e*wartosc_przekatnej_f;
+       document.write("Pole rombu o przekątnych "+wartosc_przekatnej_e + " i "+wartosc_przekatnej_f + " wynosi " + pole);
     }
 }

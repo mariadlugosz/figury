@@ -11,10 +11,13 @@ function obwod_kwadratu(bok) {
 }
 
 function pole_kwadratu(bok) {
-    if(bok <= 0) {
-        document.write(bok + " musi być dodatni");
+    var wartosc_boku = parseFloat(bok);
+    if (isNaN(wartosc_boku)) {
+        document.write(bok + " nie jest liczbą.");
+    } else if(wartosc_boku <= 0) {
+        document.write(wartosc_boku + " musi być dodatni");
     } else {
-        var pole = bok * bok;
-        document.write("Pole kwadratu o boku " + bok + " wynosi " + pole);
+        var pole = wartosc_boku* wartosc_boku;
+        document.write("Pole kwadratu o boku " + wartosc_boku + " wynosi " + pole);
     }
 }
