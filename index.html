@@ -2,6 +2,7 @@
   <head>
     <script type="text/javascript" src="kwadrat.js"></script>
     <script type="text/javascript" src="kolo.js"></script>
+    <script type="text/javascript" src="prostokat.js"></script>
   </head>
 
   <body>
@@ -14,8 +15,6 @@
     <button type="button" onclick="obwod_kwadratu(dlugosc_boku_kwadratu.value)">Oblicz obwód kwadratu</button>
     <button type="button" onclick="pole_kwadratu(dlugosc_boku_kwadratu.value)">Oblicz pole kwadratu</button>
 
-    <br>
-
     <p>Koło</p>
     <label for="dlugosc_promienia_kola">Podaj długość promienia koła: </label>
     <input id="dlugosc_promienia_kola" type="text">
@@ -24,13 +23,13 @@
 
     
     
-    <p>Oblicz obwód prostokąta</p>
+    <p>Prostokat</p>
     <label for="dlugosc_boku_a_prostokata">Podaj długość pierwszego boku prostokata: </label>
     <input id="dlugosc_boku_a_prostokata" type="text">
     <label for="dlugosc_boku_b_prostokata">Podaj długość drugiego boku prostokata: </label>
     <input id="dlugosc_boku_b_prostokata" type="text">
-    <button type="button">Oblicz</button>
-    Wynik: <div id="prostokat_wynik"></div>
+    <button type="button" onclick="obwod_prostokata(dlugosc_boku_prostokata.value)">Oblicz obwód prostokata</button>
+    <button type="button" onclick="pole_prostokata(dlugosc_boku_prostokata.value)">Oblicz pole prostokata</button>
 
     <p>Oblicz obwód rombu</p>
     <label for="dlugosc_boku_rombu">Podaj długość boku rombu: </label>
