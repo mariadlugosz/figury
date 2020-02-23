@@ -3,6 +3,7 @@
     <script type="text/javascript" src="kwadrat.js"></script>
     <script type="text/javascript" src="kolo.js"></script>
     <script type="text/javascript" src="prostokat.js"></script>
+    <script type="text/javascript" src="romb.js"></script>
   </head>
 
   <body>
@@ -31,11 +32,12 @@
     <button type="button" onclick="obwod_prostokata(dlugosc_boku_a_prostokata.value, dlugosc_boku_b_prostokata.value)">Oblicz obwód prostokata</button>
     <button type="button" onclick="pole_prostokata(dlugosc_boku_a_prostokata.value, dlugosc_boku_b_prostokata.value)">Oblicz pole prostokata</button>
 
-    <p>Oblicz obwód rombu</p>
+    <p>Romb</p>
     <label for="dlugosc_boku_rombu">Podaj długość boku rombu: </label>
     <input id="dlugosc_boku_rombu" type="text">
-    <button type="button">Oblicz</button>
-    Wynik: <div id="romb_wynik"></div>
+    <button type="button" onclick="obwod_rombu(dlugosc_boku_rombu.value)">Oblicz obwód rombu</button>
+    <button type="button" onclick="pole_rombu(dlugosc_przekatnej_e_rombu.value, dlugosc_przekatnej_f_rombu.value)">Oblicz pole rombu</button>
+
 
     <p>Oblicz obwód trapezu</p>
     <label for="dlugosc_boku_a_trapezu">Podaj długość pierwszego boku trapezu: </label>
