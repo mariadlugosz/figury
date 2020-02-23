@@ -4,6 +4,7 @@
     <script type="text/javascript" src="kolo.js"></script>
     <script type="text/javascript" src="prostokat.js"></script>
     <script type="text/javascript" src="romb.js"></script>
+    <script type="text/javascript" src="trapez.js"></script>
   </head>
 
   <body>
@@ -44,7 +45,7 @@
     <button type="button" onclick="pole_rombu(dlugosc_przekatnej_e_rombu.value, dlugosc_przekatnej_f_rombu.value)">Oblicz pole rombu</button>
 
 
-    <p>Oblicz obwód trapezu</p>
+    <p>Trapez</p>
     <label for="dlugosc_boku_a_trapezu">Podaj długość pierwszego boku trapezu: </label>
     <input id="dlugosc_boku_a_trapezu" type="text">
     <label for="dlugosc_boku_b_trapezu">Podaj długość drugiego boku trapezu: </label>
@@ -53,8 +54,16 @@
     <input id="dlugosc_boku_c_trapezu" type="text">
     <label for="dlugosc_boku_d_trapezu">Podaj długość czwartego boku trapezu: </label>
     <input id="dlugosc_boku_d_trapezu" type="text">
-    <button type="button">Oblicz</button>
-    Wynik: <div id="trapez_wynik"></div>
+    <button type="button" onclick="obwod_trapezu(dlugosc_boku_a_trapezu.value, dlugosc_boku_b_trapezu.value, dlugosc_boku_c_trapezu.value, dlugosc_boku_d_trapezu.value)">Oblicz obwód trapezu</button>
+    <br>
+    <label for="dlugosc_boku_e_trapezu">Podaj długość pierwszego boku trapezu: </label>
+    <input id="dlugosc_boku_e_trapezu" type="text">
+    <label for="dlugosc_boku_f_trapezu">Podaj długość drugiego boku trapezu: </label>
+    <input id="dlugosc_boku_f_trapezu" type="text">
+    <label for="dlugosc_wysokosci_trapezu">Podaj długość wysokości trpezu: </label>
+    <input id="dlugosc_wysokosci_trapezu" type="text">
+    <button type="button" onclick="pole_trapezu(dlugosc_boku_e_trapezu.value, dlugosc_boku_f_trapezu.value, dlugosc_wysokosci_trapezu.value)">Oblicz pole trapezu</button>
+
 
   </body>
 </html>
