@@ -1,7 +1,7 @@
 function obwod_kwadratu(bok) {
     var wartosc_boku = parseFloat(bok);
     if (isNaN(wartosc_boku)) {
-        document.write(bok + " nie jest liczbą.");
+        document.write(bok + " nie jest liczbą");
     } else if(wartosc_boku <= 0) {
       document.write(wartosc_boku + " musi być dodatni");
     } else { 
